@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: rails5base_development
+  database: account_batch_creator_development
 
 test:
   <<: *default
-  database: rails5base_test
+  database: account_batch_creator_test
 
 production:
   <<: *default
-  database: rails5base_production
-  username: rails5base
+  database: account_batch_creator_production
+  username: account_batch_creator
   password: <%= ENV['RAILS_BASE_DATABASE_PASSWORD'] %>
